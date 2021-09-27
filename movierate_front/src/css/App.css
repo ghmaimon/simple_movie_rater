@@ -1,0 +1,241 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.header{
+    height: 95vh;
+    margin: 30px;
+    text-align: center;
+    position: relative;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-size: cover;
+    background-position: top;
+    background-image: linear-gradient(to right bottom,rgba(236, 226, 197, 0.63),rgba(255, 174, 0, 0.884)), url(../images/avengers-endgame-movie-characters-uhdpaper.com-4K-52.jpg) ;
+}
+header h1{
+    color: black;
+}
+header h1 span.fa{
+    transform: rotate(30deg);
+    color: rgb(218, 9, 54);
+}
+.text-box{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    text-transform: uppercase;
+    font-size: 70px;
+    letter-spacing: 20px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgb(49, 18, 18);
+    background-image: linear-gradient(to right bottom,rgb(236, 206, 117),rgb(218, 161, 40))
+}
+.btn{
+    border-radius: 100px;
+    transition: all .2s ease-out;
+    position: relative;
+}
+.btn:Link, .btn:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 80px;
+    display: inline-block;
+    margin-top: 90px;
+}
+.btn-white{
+    background-color: white;
+    color: #777;
+    animation: moveUp 1s ease-out 1s;
+    animation-fill-mode: backwards ;
+}
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn::after{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s ease-out;
+}
+.btn-white:after{
+    background-color: white;
+}
+.btn:hover::after{
+    transform: scale(1.5);
+    opacity: 0;
+}
+@keyframes moveUp {
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.movie-list{
+    font-size: 16px;
+    height: 95vh;
+    line-height: 5;
+    background-size: cover;
+    border-right: 2px solid black;
+}
+.form{
+    font-size: 16px;
+    line-height: 5;
+    background-size: cover;
+}
+.form input,textarea,span{
+    line-height: 2;
+}
+
+.layout{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(to right bottom,rgba(236, 226, 197, 0.63),rgba(255, 174, 0, 0.884));
+    position: relative;
+    background-size: cover;
+    overflow: auto; 
+    grid-gap: 20px;
+}
+.redstar{
+    color: red;
+}
+.whitestar{
+    color: white;
+}
+.purplestar{
+    color: purple;
+}
+.rate-container{
+    border-top: black solid 2px;
+    border-radius: 20px;
+}
+.rate-container span.fa{
+    cursor: pointer;
+}
+.top{
+    font-size: 30px;
+}
+.movieops{
+    font-size: 1.5em;
+    margin: 16px 5px;
+}
+.movieops span{
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    margin-top:5px ;
+    position: relative;
+    top: 18%;
+}
+.tit{
+    cursor: pointer;
+    display: inline;
+    font-size: 40px;
+}
+.it{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+.btn-form{
+    height: 40px;
+    width: 120px;
+    padding: 5px 10px;
+    color: dimgray;
+    background-color: floralwhite;
+    font-size: 1em;
+    font-weight: 500;
+    outline: none;
+    border-radius: 18px;
+    border-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 4px;
+    transition: all .2s ease-out;
+}
+.btn-form:disabled{
+    color: rgb(19, 18, 18);
+    background-color: rgb(83, 82, 79);
+    cursor: not-allowed;
+}
+.btn-form:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.btn:active{
+    transform: translateY(-0.5px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.fa-trash{
+    color: red;
+}
+.fa-edit{
+    color: blue;
+}
+input{
+    width: 400px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: white 8px solid;
+}
+textarea{
+    width: 400px;
+    height: 200px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: white 8px solid;
+}
+.form-title{
+    font-size: 30px;
+    font-weight: 500;
+    color: wheat;
+    margin: 5px 0;
+}
+.login-form-container{
+    text-align: center;
+    background-image: linear-gradient(to right bottom,rgba(236, 226, 197, 0.63),rgba(255, 174, 0, 0.884));
+    position: relative;
+    background-size: cover;
+    overflow: auto; 
+    grid-gap: 20px;
+    min-height: 80vh;
+    font-size: 16px;
+    line-height: 5;
+}
+.login-form-container .top{
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 20px;
+    line-height: 2;
+}
+.login-form-container .btn-form{
+    width: 200px;
+    margin-top: 35px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 900;
+}
